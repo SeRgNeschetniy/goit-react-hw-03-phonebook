@@ -13,7 +13,7 @@ export default class PhoneBook extends Component {
 
   componentDidMount() {
     const contacts = JSON.parse(localStorage.getItem('contacts'));
-    if (contacts?.length) {
+    if (contacts?.length > 0) {
       this.setState({ contacts });
     }
   }
